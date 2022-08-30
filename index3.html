@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 3</title>
+</head>
+<body>
+    <p>3- Task Have an array of number sum and  AVG WITH INPUT FROM USER</p>
+
+
+
+    <script>
+        var x= +prompt("Enter the size of the array: ");
+        var arr =[];
+        var size =x;
+        var sum=0, count=0;
+        for (let index = 0; index < size; index++) {
+            arr[index]=+prompt("Enter array element: " )
+        }
+        console.log(arr)
+        for (let index = 0; index <= arr.length; index++) {
+            sum+=index;
+            count++;            
+        }
+        console.log("The sum is: " +sum)
+        console.log("The average is: "+ (sum/count));
+    </script>
+</body>
+</html>

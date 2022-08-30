@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 7</title>
+</head>
+<body>
+    
+
+
+
+
+    <script type="text/javascript" src="./Mahmoud.txt">
+                    // *******************((((((I googled all of the codes here)))))))***********************
+                    // I did  not know how to reach to the write way
+                    //    important   important   important   important   important   important
+// 👇️ if using ES6 Imports uncomment line below
+ import {readFileSync, promises as fsPromises} from 'fs';
+const {readFileSync, promises: fsPromises} = import('fs');
+
+// ✅ read file ASYNCHRONOUSLY
+async function asyncReadFile(filename) {
+  try {
+    const contents = await fsPromises.readFile(filename, 'utf-8');
+
+    const arr = contents.split(/\r?\n/);
+
+    console.log(arr); // 👉️ ['One', 'Two', 'Three', 'Four']
+
+    return arr;
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+asyncReadFile('Mahmoud.txt');
+import {sum} from './another-file.js';
+
+console.log(sum(50, 50)); // 👉️ 100
+
+    </script>
+</body>
+</html>

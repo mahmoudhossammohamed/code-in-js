@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 4</title>
+</head>
+<body>
+    
+
+
+    <script>
+        var employees_number = prompt("Hello, please Enter the numer of employees");
+        var employees = [], sum = 0;
+        for(let i =0; i < employees_number; i++){
+            var name = prompt("Enter empolyee "+i+" name:")
+            do{
+                var salary = prompt("Enter his Salary:");
+            }while(isNaN(salary))
+            employees.push([name,salary]);
+            
+            sum += (+salary)
+        }
+// array of employees filled with all names and salaries 
+// sum summation of all salaries 
+
+            console.log("sum of employees is :"+sum+ " and the average is "+ (sum/employees_number) )
+            console.log(employees)
+    </script>
+</body>
+</html>

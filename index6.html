@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 6
+
+    </title>
+</head>
+<body>
+    
+
+
+    <script>
+        // reverse a string
+        function reverse(s){
+            x=s.split(" ").reverse().join("");
+            return console.log(x)
+
+        }reverse("M a hm o u d")
+        // reverse a number  
+        function reverseN(s){
+            x=s.split("").reverse().join("");
+            
+            return console.log( Math.sign(s) * parseInt( x))
+
+        }reverseN("-0123456789") 
+        // reverse a number without convert to string
+    function reverseNumber(number) {
+        var revNumber = 0;
+        while (number > 0) {
+            revNumber *=  10
+            revNumber += number % 10
+            number = Math.floor(number / 10);
+        }
+        return revNumber;
+        }
+        console.log(reverseNumber(876));
+    </script>
+</body>
+</html>
